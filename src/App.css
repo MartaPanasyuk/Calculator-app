@@ -1,0 +1,43 @@
+.theme-options {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
+  padding: 20px 0;
+}
+span {
+  cursor: pointer;
+  opacity: 0.5;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin: 2px 10px;
+  border: 1px solid #fff;
+  display: inline-block;
+}
+span.active {
+  opacity: 1;
+}
+
+#theme-one {
+  background-color: aqua;
+}
+
+#theme-two {
+  background-color: blue;
+}
+
+#theme-three {
+  background-color: royalblue;
+}
+
+.App.theme-one {
+  background-color: green;
+}
+
+.App.theme-two {
+  background-color: red;
+}
+
+.App.theme-three {
+  background-color: bisque;
+}

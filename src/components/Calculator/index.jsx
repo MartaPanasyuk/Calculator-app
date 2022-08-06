@@ -3,7 +3,6 @@ import { useState } from "react";
 
 export default function Calculator() {
   const [result, setResult] = useState("");
-
   const [calculation, setCalculation] = useState("");
   const operators = ["/", "*", "+", "-", "."];
 
@@ -18,7 +17,6 @@ export default function Calculator() {
       return;
     }
     setCalculation(calculation + value);
-
     //If the last element is not an operator
     if (!operators.includes(value)) {
       setResult(eval(calculation + value).toString());
@@ -26,7 +24,6 @@ export default function Calculator() {
   };
 
   //eval = making math operation with the strings
-
   const finishedCalculation = () => {
     setCalculation(eval(calculation).toString());
   };
